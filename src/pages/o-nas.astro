@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="O nas | Pomoc Drogowa"
+  description="Poznaj naszą firmę — doświadczony zespół pomocy drogowej, dostępny 24/7 na terenie całego regionu."
+>
+  <!-- Hero -->
+  <section class="relative bg-gray-950 pt-20 pb-20 overflow-hidden">
+    <div class="wrap relative text-center">
+      <span class="eyebrow bg-white/10 text-gray-300">O firmie</span>
+      <h1 class="text-4xl lg:text-5xl font-extrabold text-white mb-4">Kim jesteśmy</h1>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Zespół, który pomaga kierowcom na drodze — szybko, uczciwie i profesjonalnie.</p>
+    </div>
+  </section>
+
+  <!-- Treść -->
+  <section class="section bg-white">
+    <div class="wrap">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-gray-500 text-lg leading-relaxed mb-5">
+            [Miejsce na opis firmy — historia, lata działalności, obszar działania.]
+            Pomoc Drogowa to zespół doświadczonych kierowców lawet i mechaników gotowych
+            do działania w każdej sytuacji na drodze.
+          </p>
+          <p class="text-gray-500 leading-relaxed mb-10">
+            Współpracujemy z klientami indywidualnymi oraz firmami transportowymi.
+            Stawiamy na szybkość reakcji i jasne zasady rozliczeń — bez niespodzianek.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { v: '24/7', l: 'dostępność' },
+              { v: '1000+', l: 'zrealizowanych zleceń' },
+              { v: '30 min', l: 'średni czas dojazdu' },
+              { v: '100%', l: 'zadowolonych klientów' },
+            ].map(s => (
+              <div class="text-center bg-gray-50 rounded-xl p-4">
+                <div class="text-2xl lg:text-3xl font-extrabold text-pd-orange">{s.v}</div>
+                <div class="text-xs text-gray-500 mt-0.5 leading-tight">{s.l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7176?w=800&q=80&auto=format"
+              alt="Zespół pomocy drogowej"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wartości -->
+  <section class="section bg-gray-50">
+    <div class="wrap">
+      <div class="text-center mb-14">
+        <span class="eyebrow bg-orange-50 text-pd-orange">Nasze wartości</span>
+        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900">Czym się kierujemy</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {[
+          { title: 'Szybkość', desc: 'Każda minuta jest ważna — staramy się być na miejscu jak najszybciej.' },
+          { title: 'Uczciwość', desc: 'Jasne zasady i wycena przed wykonaniem usługi, bez ukrytych kosztów.' },
+          { title: 'Profesjonalizm', desc: 'Doświadczony zespół i odpowiedni sprzęt do każdej sytuacji na drodze.' },
+        ].map(v => (
+          <div class="card p-8 text-center">
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{v.title}</h3>
+            <p class="text-gray-500 leading-relaxed">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
