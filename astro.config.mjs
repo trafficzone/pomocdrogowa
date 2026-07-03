@@ -4,6 +4,6 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://trafficzone.github.io',
-  base: '/pomocdrogowa',
+  base: '/pomocdrogowa/',
   integrations: [tailwind()],
 });
