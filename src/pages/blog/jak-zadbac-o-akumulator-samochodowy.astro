@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Jak zadbać o akumulator samochodowy? Poradnik kierowcy | AutoMania"
+  description="Rozładowany akumulator to jedna z najczęstszych przyczyn wezwania pomocy drogowej. Sprawdź jak pielęgnować akumulator i kiedy wymienić go na nowy."
+>
+  <section class="relative bg-gray-950 pt-20 pb-16">
+    <div class="wrap max-w-3xl">
+      <a href="/blog" class="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm mb-8 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Powrót do bloga
+      </a>
+      <span class="eyebrow bg-white/10 text-gray-300">Elektryka samochodowa</span>
+      <h1 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 leading-tight">Jak zadbać o akumulator samochodowy? Poradnik kierowcy</h1>
+      <div class="flex items-center gap-3 text-gray-400 text-sm">
+        <span>2 maja 2025</span>
+        <span>·</span>
+        <span>5 min czytania</span>
+        <span>·</span>
+        <span>AutoMania Andrzej Radomski</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="wrap max-w-3xl">
+      <div class="prose prose-lg max-w-none text-gray-600">
+
+        <p class="text-xl text-gray-700 leading-relaxed mb-8">
+          Rozładowany akumulator to numer jeden wśród przyczyn wezwania pomocy drogowej — szczególnie
+          w okresie jesienno-zimowym. Dobrą wiadomością jest to, że można mu zapobiec dzięki kilku
+          prostym czynnościom, które każdy kierowca może wykonać samodzielnie.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Jak długo służy akumulator?</h2>
+        <p class="mb-5">
+          Przeciętny akumulator samochodowy wytrzymuje od 4 do 6 lat, choć wiele zależy od sposobu
+          użytkowania pojazdu, klimatu i jakości samego akumulatora. Akumulatory w samochodach
+          jeżdżonych głównie na krótkich trasach (miasto, kilka kilometrów dziennie) zużywają się
+          szybciej — nie mają czasu w pełni się naładować.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Sygnały, że akumulator słabnie</h2>
+        <ul class="space-y-2 mb-8">
+          {[
+            'Silnik odpalaje wolniej niż zwykle, "kręci się ciężej"',
+            'Rozruch sprawia problem szczególnie w zimne poranki',
+            'Zapalona kontrolka akumulatora na desce rozdzielczej',
+            'Przyciemnione światła przy próbie odpalenia',
+            'Elektronika auta (radio, okna) resetuje się lub zachowuje niestabilnie',
+            'Akumulator ma ponad 4 lata i ostatnio nie był sprawdzany',
+          ].map(item => (
+            <li class="flex items-start gap-3 text-gray-600">
+              <span class="w-5 h-5 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Co skraca życie akumulatora?</h2>
+        <p class="mb-4">Unikaj tych sytuacji, które szczególnie szkodzą akumulatorowi:</p>
+        <ul class="space-y-2 mb-8">
+          {[
+            'Krótkie trasy — alternator nie zdąży naładować akumulatora po rozruchu',
+            'Długie postoje bez jazdy (kilka tygodni)',
+            'Zostawianie włączonego oświetlenia lub innych odbiorników prądu przy wyłączonym silniku',
+            'Niskie temperatury — mróz potrafi wyładować słaby akumulator z dnia na dzień',
+            'Głębokie rozładowania — każde pełne wyładowanie skraca żywotność akumulatora',
+          ].map(item => (
+            <li class="flex items-start gap-3 text-gray-600">
+              <span class="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Jak rozruchować auto kablami?</h2>
+        <p class="mb-5">
+          Gdy akumulator się rozładuje, możesz spróbować rozruchować auto kablami od innego pojazdu.
+          Kolejność podłączenia kabli jest kluczowa — błąd może uszkodzić elektronikę obu aut:
+        </p>
+        <ol class="space-y-3 mb-8 list-none">
+          {[
+            'Połącz czerwony kabel z plusem (+) rozładowanego akumulatora',
+            'Drugi koniec czerwonego kabla podłącz do plusu (+) sprawnego auta',
+            'Czarny kabel połącz z minusem (-) sprawnego akumulatora',
+            'Drugi koniec czarnego kabla podłącz do masy (metalowy element karoserii) rozładowanego auta — NIE do minusa akumulatora',
+            'Uruchom sprawne auto, odczekaj 2–3 minuty',
+            'Spróbuj uruchomić rozładowane auto',
+            'Po odpaleniu odłącz kable w odwrotnej kolejności',
+          ].map((item, i) => (
+            <li class="flex items-start gap-3 text-gray-600">
+              <span class="w-6 h-6 rounded-full bg-pd-orange flex items-center justify-center flex-shrink-0 mt-0.5 text-white text-xs font-bold">{i + 1}</span>
+              {item}
+            </li>
+          ))}
+        </ol>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Kiedy wymienić akumulator?</h2>
+        <p class="mb-5">
+          Jeśli akumulator ma ponad 4–5 lat, sprawia problemy zimą lub wymaga regularnego doładowywania —
+          czas na wymianę. Nowy akumulator to koszt od 200 do 600 zł, w zależności od pojemności i marki.
+          To zdecydowanie mniej niż koszt lawety i nieprzyjemności ze zdartym autem w nieodpowiednim miejscu.
+        </p>
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-8 mt-10">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Sprawdzimy Twój akumulator w AutoMania</h3>
+          <p class="text-gray-600 mb-5">
+            W warsztacie AutoMania testujemy akumulatory specjalistycznym testerem — badamy rzeczywistą
+            pojemność i stan zdrowia ogniw. Zapraszamy na bezpłatny test lub zadzwoń jeśli masz problem z rozruchem.
+          </p>
+          <a href="tel:+48609116309" class="btn-primary">Zadzwoń: 609 116 309</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-gray-50">
+    <div class="wrap max-w-3xl">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Przeczytaj też</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <a href="/blog/najczestsze-awarie-samochodowe" class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Najczęstsze awarie samochodowe i jak im zapobiec</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+        <a href="/blog/pomoc-drogowa-24-7-dlaczego-wazna" class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Pomoc drogowa 24/7 — dlaczego całodobowa dostępność jest ważna?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

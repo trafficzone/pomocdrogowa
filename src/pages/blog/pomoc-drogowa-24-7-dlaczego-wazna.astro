@@ -1,0 +1,129 @@
+﻿---
+import Layout from '../../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout
+  title="Pomoc drogowa 24/7 — dlaczego całodobowa dostępność jest ważna? | AutoMania"
+  description="Awarie nie pytają o porę dnia. Dowiedz się dlaczego warto mieć numer do całodobowej pomocy drogowej i co różni dobre serwisy od tych słabych."
+>
+  <section class="relative bg-gray-950 pt-20 pb-16">
+    <div class="wrap max-w-3xl">
+      <a href={`${base}blog`} class="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm mb-8 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Powrót do bloga
+      </a>
+      <span class="eyebrow bg-white/10 text-gray-300">Pomoc drogowa</span>
+      <h1 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 leading-tight">Pomoc drogowa 24/7 — dlaczego całodobowa dostępność jest ważna?</h1>
+      <div class="flex items-center gap-3 text-gray-400 text-sm">
+        <span>28 kwietnia 2025</span>
+        <span>·</span>
+        <span>4 min czytania</span>
+        <span>·</span>
+        <span>AutoMania Andrzej Radomski</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="wrap max-w-3xl">
+      <div class="prose prose-lg max-w-none text-gray-600">
+
+        <p class="text-xl text-gray-700 leading-relaxed mb-8">
+          Awaria samochodu rzadko zdarza się w godzinach pracy warsztatu mechanicznego.
+          Kolizja o 23:00, rozładowany akumulator o 5 rano, przebita opona w drodze powrotnej
+          ze świąt — to rzeczywistość kierowców. Dlatego całodobowa pomoc drogowa to nie luksus,
+          lecz niezbędna usługa dla każdego, kto jeździ regularnie.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Kiedy najczęściej potrzebna jest pomoc drogowa?</h2>
+        <p class="mb-5">
+          Statystyki pokazują, że znaczna część wezwań pomocy drogowej ma miejsce poza standardowymi
+          godzinami pracy. Nocne podróże, wyjazdy weekendowe, długie trasy świąteczne — to właśnie
+          wtedy kierowcy są najbardziej narażeni i jednocześnie najtrudniej im uzyskać pomoc.
+        </p>
+        <p class="mb-5">
+          Wiele firm oferuje "całodobową pomoc", ale w praktyce oznacza to tylko dyżurny telefon —
+          bez gwarancji szybkiego dojazdu. Warto wiedzieć czego szukać, zanim trafi się w potrzebę.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Co odróżnia dobrą pomoc drogową od złej?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <div class="bg-green-50 rounded-xl p-5">
+            <h3 class="font-bold text-green-800 mb-3">Dobra pomoc drogowa</h3>
+            <ul class="space-y-2 text-green-700 text-sm">
+              {[
+                'Faktycznie dostępna całą dobę',
+                'Szybki czas reakcji — sprawna koordynacja',
+                'Jasna wycena przed wykonaniem usługi',
+                'Własny sprzęt (laweta, narzędzia)',
+                'Doświadczeni pracownicy',
+                'Możliwość naprawy na miejscu lub transportu do warsztatu',
+              ].map(item => <li class="flex items-start gap-2"><span class="text-green-500 font-bold flex-shrink-0">✓</span>{item}</li>)}
+            </ul>
+          </div>
+          <div class="bg-red-50 rounded-xl p-5">
+            <h3 class="font-bold text-red-800 mb-3">Czerwone flagi</h3>
+            <ul class="space-y-2 text-red-700 text-sm">
+              {[
+                'Brak odpowiedzi na telefon w nocy',
+                'Czas oczekiwania ponad godzinę bez informacji',
+                'Wycena dopiero po przyjeździe',
+                'Brak własnego sprzętu — podzlecają usługi',
+                'Brak możliwości rachunku/faktury',
+              ].map(item => <li class="flex items-start gap-2"><span class="text-red-500 font-bold flex-shrink-0">✗</span>{item}</li>)}
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Czy ubezpieczenie assistance wystarczy?</h2>
+        <p class="mb-5">
+          Wiele polis ubezpieczeniowych zawiera pakiet assistance z pomocą drogową. To dobra baza,
+          ale warto znać jej ograniczenia. Często obowiązuje limit kilometrów holowania, określona
+          liczba wezwań w roku, a czas oczekiwania może być długi — bo assistance działa przez
+          centrale i pośredników.
+        </p>
+        <p class="mb-5">
+          Bezpośredni kontakt z lokalną firmą pomocy drogowej, taką jak AutoMania, często oznacza
+          szybszy dojazd i bardziej elastyczne podejście do problemu. Możesz też wybrać, gdzie Twoje auto
+          trafi do warsztatu — a to ważne, gdy zależy Ci na sprawdzonym mechaniku.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Zapisz numer pomocy drogowej ZANIM będziesz go potrzebować</h2>
+        <p class="mb-5">
+          Szukanie numeru telefonu do pomocy drogowej na poboczu drogi, w nocy, pod presją
+          — to sytuacja, której warto uniknąć. Zapisz numer zaufanej firmy w telefonie już teraz.
+          Warto też mieć go na kartce w schowku samochodowym — na wypadek, gdy bateria w telefonie się wyczerpie.
+        </p>
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-8 mt-10">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">AutoMania — prawdziwa pomoc drogowa 24/7</h3>
+          <p class="text-gray-600 mb-2">
+            Andrzej Radomski i ekipa AutoMania są do dyspozycji kierowców całą dobę.
+            Nie jesteśmy centrum telefonicznym — jesteśmy lokalną firmą, która faktycznie wyjeżdża.
+          </p>
+          <p class="text-gray-600 mb-5">Zapisz nasz numer i miej spokój na każdą trasę:</p>
+          <a href="tel:+48609116309" class="btn-primary text-xl px-8 py-4">609 116 309</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-gray-50">
+    <div class="wrap max-w-3xl">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Przeczytaj też</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <a href={`${base}blog/co-robic-gdy-samochod-sie-psuje-na-drodze`} class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Co zrobić gdy samochód się psuje na drodze?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+        <a href={`${base}blog/laweta-kiedy-i-jak-dziala`} class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Laweta — kiedy jej potrzebujesz?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+
+const posts = [
+  {
+    slug: 'co-robic-gdy-samochod-sie-psuje-na-drodze',
+    title: 'Co zrobić, gdy samochód psuje się na drodze?',
+    excerpt: 'Awaria w trasie to stresująca sytuacja. Poznaj krok po kroku, jak zachować się bezpiecznie i jak najszybciej uzyskać pomoc drogową.',
+    date: '10 czerwca 2025',
+    readTime: '5 min',
+  },
+  {
+    slug: 'laweta-kiedy-i-jak-dziala',
+    title: 'Laweta — kiedy jej potrzebujesz i jak działa transport?',
+    excerpt: 'Nie każda awaria kończy się naprawą na miejscu. Dowiedz się, kiedy konieczny jest transport lawetą i na co zwrócić uwagę przy wyborze usługi.',
+    date: '18 czerwca 2025',
+    readTime: '6 min',
+  },
+  {
+    slug: 'najczestsze-awarie-samochodowe',
+    title: 'Najczęstsze awarie samochodowe i jak im zapobiec',
+    excerpt: 'Dowiedz się, jakie usterki najczęściej unieruchamiają kierowców i co możesz zrobić, żeby nie zostać z autem na środku drogi.',
+    date: '25 czerwca 2025',
+    readTime: '7 min',
+  },
+  {
+    slug: 'jak-zadbac-o-akumulator-samochodowy',
+    title: 'Jak zadbać o akumulator samochodowy? Poradnik kierowcy',
+    excerpt: 'Rozładowany akumulator to jedna z najczęstszych przyczyn wezwania pomocy drogowej. Sprawdź, jak go pielęgnować i kiedy wymienić.',
+    date: '2 maja 2025',
+    readTime: '5 min',
+  },
+  {
+    slug: 'wymiana-kola-na-drodze',
+    title: 'Wymiana koła na drodze — kiedy sam, kiedy wezwać pomoc?',
+    excerpt: 'Przebita opona to klasyk. Sprawdź, kiedy warto zmienić koło samemu, a kiedy lepiej zadzwonić do pomocy drogowej — zwłaszcza nocą lub na autostradzie.',
+    date: '14 maja 2025',
+    readTime: '4 min',
+  },
+  {
+    slug: 'pomoc-drogowa-24-7-dlaczego-wazna',
+    title: 'Pomoc drogowa 24/7 — dlaczego całodobowa dostępność jest tak ważna?',
+    excerpt: 'Awarie nie pytają o porę dnia. Dowiedz się, dlaczego warto mieć pod ręką numer do całodobowej pomocy drogowej i co różni dobre serwisy od tych słabych.',
+    date: '28 kwietnia 2025',
+    readTime: '4 min',
+  },
+  {
+    slug: 'transport-samochodu-laweta-co-warto-wiedziec',
+    title: 'Transport samochodu lawetą — co warto wiedzieć przed zleceniem?',
+    excerpt: 'Zanim zlecisz transport lawetą, sprawdź co powinieneś wiedzieć: jak wygląda załadunek, ile kosztuje, co wpływa na cenę i jakie są Twoje prawa jako klient.',
+    date: '7 maja 2025',
+    readTime: '6 min',
+  },
+  {
+    slug: 'awaria-na-autostradzie-co-robic',
+    title: 'Awaria na autostradzie — jak się zachować i kto może pomóc?',
+    excerpt: 'Autostrada to szczególnie niebezpieczne miejsce na awarię. Poznaj zasady bezpiecznego postępowania i dowiedz się, jak szybko wezwać lawetę.',
+    date: '20 maja 2025',
+    readTime: '5 min',
+  },
+];
+---
+
+<Layout
+  title="Blog motoryzacyjny | AutoMania — Laweta, naprawy, pomoc drogowa"
+  description="Artykuły i porady motoryzacyjne od AutoMania Andrzej Radomski. Dowiedz się więcej o pomocy drogowej, lawetowaniu i naprawach samochodowych."
+>
+  <section class="relative bg-gray-950 pt-20 pb-20">
+    <div class="wrap text-center">
+      <span class="eyebrow bg-white/10 text-gray-300">Wiedza motoryzacyjna</span>
+      <h1 class="text-4xl lg:text-5xl font-extrabold text-white mb-4">Blog AutoMania</h1>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Praktyczne porady dotyczące pomocy drogowej, lawetowania i mechaniki samochodowej.</p>
+    </div>
+  </section>
+
+  <section class="section bg-gray-50">
+    <div class="wrap">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.map(post => (
+          <a href={`${base}blog/${post.slug}`} class="card group block p-0 overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="p-7">
+              <div class="flex items-center gap-3 text-xs text-gray-400 mb-4">
+                <span>{post.date}</span>
+                <span>·</span>
+                <span>{post.readTime} czytania</span>
+              </div>
+              <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-pd-orange transition-colors leading-snug">{post.title}</h2>
+              <p class="text-gray-500 text-sm leading-relaxed">{post.excerpt}</p>
+              <span class="mt-5 inline-flex items-center gap-1.5 text-pd-orange font-semibold text-sm group-hover:gap-3 transition-all">
+                Czytaj więcej
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-gray-950">
+    <div class="wrap text-center">
+      <h2 class="text-3xl font-extrabold text-white mb-4">Potrzebujesz pomocy teraz?</h2>
+      <p class="text-gray-400 mb-8">AutoMania Andrzej Radomski — laweta i warsztat, dostępni 24/7.</p>
+      <a href="tel:+48609116309" class="btn-primary text-lg px-8 py-4">Zadzwoń: 609 116 309</a>
+    </div>
+  </section>
+</Layout>

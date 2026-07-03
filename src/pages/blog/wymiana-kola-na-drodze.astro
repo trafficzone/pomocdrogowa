@@ -1,0 +1,138 @@
+﻿---
+import Layout from '../../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout
+  title="Wymiana koła na drodze — kiedy sam, kiedy wezwać pomoc? | AutoMania"
+  description="Przebita opona to klasyk. Sprawdź kiedy warto zmienić koło samemu, a kiedy lepiej zadzwonić do pomocy drogowej — zwłaszcza nocą lub na autostradzie."
+>
+  <section class="relative bg-gray-950 pt-20 pb-16">
+    <div class="wrap max-w-3xl">
+      <a href={`${base}blog`} class="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm mb-8 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Powrót do bloga
+      </a>
+      <span class="eyebrow bg-white/10 text-gray-300">Opony i koła</span>
+      <h1 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 leading-tight">Wymiana koła na drodze — kiedy sam, kiedy wezwać pomoc?</h1>
+      <div class="flex items-center gap-3 text-gray-400 text-sm">
+        <span>14 maja 2025</span>
+        <span>·</span>
+        <span>4 min czytania</span>
+        <span>·</span>
+        <span>AutoMania Andrzej Radomski</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="wrap max-w-3xl">
+      <div class="prose prose-lg max-w-none text-gray-600">
+
+        <p class="text-xl text-gray-700 leading-relaxed mb-8">
+          Przebita opona to jedna z tych sytuacji, która przytrafia się niemal każdemu kierowcy.
+          Część osób poradzi sobie sama — ale nie zawsze jest to możliwe ani bezpieczne.
+          Oto kiedy warto sięgnąć po klucz, a kiedy lepiej zadzwonić po pomoc drogową.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Kiedy możesz zmienić koło samodzielnie?</h2>
+        <p class="mb-4">Samodzielna wymiana koła jest możliwa, gdy:</p>
+        <ul class="space-y-2 mb-8">
+          {[
+            'Masz koło zapasowe (pełnowymiarowe lub dojazdowe) w dobrym stanie',
+            'Masz przy sobie lewarek i klucz do kół',
+            'Auto stoi na twardym, płaskim podłożu z dala od ruchu',
+            'Nie jest ciemno albo masz latarkę i kamizelkę odblaskową',
+            'Jesteś w stanie fizycznie wykonać tę czynność',
+          ].map(item => (
+            <li class="flex items-start gap-3 text-gray-600">
+              <span class="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Kiedy KONIECZNIE zadzwoń po pomoc drogową?</h2>
+        <ul class="space-y-2 mb-8">
+          {[
+            'Jesteś na autostradzie lub drodze ekspresowej — to zbyt niebezpieczne miejsce',
+            'Nie masz koła zapasowego ani zestawu naprawczego',
+            'Uszkodzone są dwie lub więcej opon jednocześnie',
+            'Opona pękła, a nie „tylko" złapałeś gwoździa — mogła uszkodzić felgę',
+            'Jest ciemno, pada deszcz lub warunki są niebezpieczne',
+            'Koło jest przymocowane zbyt mocno (śruby nie dają się odkręcić)',
+            'Samochód nie jest stabilny lub boisz się, że lewarek nie utrzyma auta',
+          ].map(item => (
+            <li class="flex items-start gap-3 text-gray-600">
+              <span class="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Jak bezpiecznie zmienić koło krok po kroku</h2>
+        <ol class="space-y-3 mb-8 list-none">
+          {[
+            'Włącz awaryjne światła migające natychmiast',
+            'Zatrzymaj się w bezpiecznym miejscu — z dala od ruchu',
+            'Włóż kamizelkę odblaskową i wystaw trójkąt ostrzegawczy',
+            'Wyjmij z bagażnika koło zapasowe, lewarek i klucz do kół',
+            'Poluzuj śruby kół zanim unieśiesz auto (łatwiej przy oporze gruntu)',
+            'Ustaw lewarek w odpowiednim miejscu (oznaczone w progach)',
+            'Unieś auto, wykręć śruby, wymień koło',
+            'Dokręć śruby naprzemiennie (na krzyż) z odpowiednim momentem',
+            'Jedź do warsztatu — sprawdź dokręcenie śrub po 50 km, sprawdź ciśnienie w kole',
+          ].map((item, i) => (
+            <li class="flex items-start gap-3 text-gray-600">
+              <span class="w-6 h-6 rounded-full bg-pd-orange flex items-center justify-center flex-shrink-0 mt-0.5 text-white text-xs font-bold">{i + 1}</span>
+              {item}
+            </li>
+          ))}
+        </ol>
+
+        <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-8">
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Uwaga: koło dojazdowe</h3>
+          <p class="text-gray-600 text-sm">
+            Jeśli montujesz mniejsze koło dojazdowe (tzw. "zapas tymczasowy"), jedź maksymalnie 80 km/h
+            i nie dalej niż do najbliższego warsztatu. Nie jest ono przeznaczone do długiej jazdy.
+          </p>
+        </div>
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-8 mt-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Masz przebitą oponę? Pomożemy!</h3>
+          <p class="text-gray-600 mb-5">
+            AutoMania Andrzej Radomski oferuje pomoc drogową 24/7 — wyjedziemy i zmienimy koło lub
+            przetransportujemy Cię do warsztatu. Dzwonimy i ruszamy.
+          </p>
+          <a href="tel:+48609116309" class="btn-primary">Zadzwoń: 609 116 309</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-gray-50">
+    <div class="wrap max-w-3xl">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Przeczytaj też</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <a href={`${base}blog/co-robic-gdy-samochod-sie-psuje-na-drodze`} class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Co zrobić gdy samochód się psuje na drodze?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+        <a href={`${base}blog/laweta-kiedy-i-jak-dziala`} class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Laweta — kiedy jej potrzebujesz?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

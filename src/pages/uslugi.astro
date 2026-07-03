@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 
 const services = [
   {
@@ -83,7 +84,7 @@ const services = [
           </svg>
           Zadzwoń teraz
         </a>
-        <a href="/kontakt" class="btn-outline text-lg px-8 py-4">
+        <a href={`${base}kontakt`} class="btn-outline text-lg px-8 py-4">
           Napisz do nas
         </a>
       </div>

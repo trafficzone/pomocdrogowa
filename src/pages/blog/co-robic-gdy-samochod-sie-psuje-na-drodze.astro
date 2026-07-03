@@ -1,0 +1,128 @@
+﻿---
+import Layout from '../../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout
+  title="Co zrobić, gdy samochód psuje się na drodze? | AutoMania"
+  description="Awaria w trasie to stresująca sytuacja. Poznaj krok po kroku, jak zachować się bezpiecznie i jak najszybciej uzyskać pomoc drogową — poradnik AutoMania."
+>
+  <section class="relative bg-gray-950 pt-20 pb-16">
+    <div class="wrap max-w-3xl">
+      <a href={`${base}blog`} class="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm mb-8 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Powrót do bloga
+      </a>
+      <span class="eyebrow bg-white/10 text-gray-300">Poradnik kierowcy</span>
+      <h1 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 leading-tight">Co zrobić, gdy samochód psuje się na drodze?</h1>
+      <div class="flex items-center gap-3 text-gray-400 text-sm">
+        <span>10 czerwca 2025</span>
+        <span>·</span>
+        <span>5 min czytania</span>
+        <span>·</span>
+        <span>AutoMania Andrzej Radomski</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="wrap max-w-3xl">
+      <div class="prose prose-lg max-w-none text-gray-600">
+
+        <p class="text-xl text-gray-700 leading-relaxed mb-8">
+          Awaria samochodu w trasie zdarza się każdemu — i nigdy nie przychodzi w odpowiednim momencie.
+          Kluczowe jest zachowanie spokoju i działanie według sprawdzonego planu. Oto co zrobić krok po kroku.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">1. Zatrzymaj samochód w bezpiecznym miejscu</h2>
+        <p class="mb-5">
+          Gdy poczujesz, że coś jest nie tak — silnik traci moc, pojawia się dziwny dźwięk, zapalają się kontrolki
+          — jak najszybciej zjazd na pobocze lub pas awaryjny. Włącz awaryjne światła migające natychmiast,
+          jeszcze zanim całkowicie się zatrzymasz. Im wcześniej zasygnalizujesz problem innym kierowcom, tym bezpieczniej.
+        </p>
+        <p class="mb-5">
+          Jeśli jesteś na autostradzie lub drodze ekspresowej, zatrzymaj się jak najdalej od pasa ruchu.
+          Nawet kilka metrów dalej od krawędzi jezdni może uratować życie.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">2. Zabezpiecz miejsce zdarzenia</h2>
+        <p class="mb-5">
+          Po zatrzymaniu włącz światła awaryjne (jeśli jeszcze tego nie zrobiłeś) i wysiądź z samochodu
+          od strony nienarażonej na ruch. Na drogach poza terenem zabudowanym ustaw trójkąt ostrzegawczy
+          minimum 30–50 metrów za samochodem. Na autostradzie — minimum 100 metrów.
+        </p>
+        <p class="mb-5">
+          Jeśli masz kamizelkę odblaskową — załóż ją zanim wyjdziesz z auta. To obowiązek prawny
+          i przede wszystkim kwestia bezpieczeństwa.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">3. Oceń sytuację — naprawa czy laweta?</h2>
+        <p class="mb-5">
+          Część awarii można usunąć na miejscu: przebita opona, rozładowany akumulator, brak paliwa.
+          Inne wymagają profesjonalnej pomocy i transportu do warsztatu. Gdy nie masz pewności co się stało —
+          nie próbuj na siłę uruchamiać silnika. Może to spowodować większe uszkodzenia.
+        </p>
+        <p class="mb-5">
+          Zadzwoń do pomocy drogowej i opisz dokładnie sytuację: lokalizację (droga, numer kilometra, pobliskie miejscowości),
+          objawy awarii i stan pojazdu. Dobry dyspozytor pomoże ocenić czy wystarczy drobna naprawa, czy potrzebna jest laweta.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">4. Czekaj w bezpiecznym miejscu</h2>
+        <p class="mb-5">
+          Czekając na pomoc, trzymaj się jak najdalej od jezdni — najlepiej za barierą ochronną lub na skarpie.
+          Na autostradzie nigdy nie stój za samochodem ani przed nim — to najgroźniejsze miejsca w razie uderzenia przez inne auto.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Co mieć w samochodzie na wszelki wypadek?</h2>
+        <ul class="space-y-2 mb-8">
+          {[
+            'Trójkąt ostrzegawczy (obowiązek)',
+            'Kamizelka odblaskowa (obowiązek poza terenem zabudowanym)',
+            'Apteczka',
+            'Gaśnica',
+            'Kabel rozruchowy do akumulatora',
+            'Komplet narzędzi lub klucz do kół',
+            'Koło zapasowe lub zestaw naprawczy do opon',
+            'Telefon naładowany i numer pomocy drogowej w kontaktach',
+          ].map(item => (
+            <li class="flex items-start gap-3 text-gray-600">
+              <span class="w-5 h-5 rounded-full bg-pd-orange/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-pd-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                </svg>
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-8 mt-10">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">AutoMania — pomoc drogowa 24/7</h3>
+          <p class="text-gray-600 mb-5">
+            Masz awarię? Zadzwoń do nas — dojedziemy do Ciebie szybko, niezależnie od pory dnia i nocy.
+            Andrzej Radomski i jego ekipa obsługują kierowców w regionie od wielu lat.
+          </p>
+          <a href="tel:+48609116309" class="btn-primary">Zadzwoń: 609 116 309</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-gray-50">
+    <div class="wrap max-w-3xl">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Przeczytaj też</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <a href={`${base}blog/laweta-kiedy-i-jak-dziala`} class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Laweta — kiedy jej potrzebujesz i jak działa transport?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+        <a href={`${base}blog/awaria-na-autostradzie-co-robic`} class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Awaria na autostradzie — jak się zachować?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

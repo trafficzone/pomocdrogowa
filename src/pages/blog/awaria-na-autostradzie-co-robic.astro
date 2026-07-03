@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Awaria na autostradzie — jak się zachować i kto może pomóc? | AutoMania"
+  description="Autostrada to szczególnie niebezpieczne miejsce na awarię. Poznaj zasady bezpiecznego postępowania i dowiedz się jak szybko wezwać lawetę lub pomoc drogową."
+>
+  <section class="relative bg-gray-950 pt-20 pb-16">
+    <div class="wrap max-w-3xl">
+      <a href="/blog" class="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm mb-8 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Powrót do bloga
+      </a>
+      <span class="eyebrow bg-white/10 text-gray-300">Bezpieczeństwo na drodze</span>
+      <h1 class="text-3xl lg:text-4xl font-extrabold text-white mb-4 leading-tight">Awaria na autostradzie — jak się zachować i kto może pomóc?</h1>
+      <div class="flex items-center gap-3 text-gray-400 text-sm">
+        <span>20 maja 2025</span>
+        <span>·</span>
+        <span>5 min czytania</span>
+        <span>·</span>
+        <span>AutoMania Andrzej Radomski</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="wrap max-w-3xl">
+      <div class="prose prose-lg max-w-none text-gray-600">
+
+        <p class="text-xl text-gray-700 leading-relaxed mb-8">
+          Awaria na autostradzie to jedna z najtrudniejszych sytuacji dla kierowcy. Wysoka prędkość
+          pojazdów, brak pobocza w niektórych miejscach i presja czasu sprawiają, że błędy w takich
+          momentach mogą mieć tragiczne skutki. Oto co robić krok po kroku.
+        </p>
+
+        <div class="bg-red-50 border border-red-200 rounded-2xl p-6 mb-8">
+          <h3 class="text-lg font-bold text-red-900 mb-2">Ważne: autostrada to strefa podwyższonego ryzyka</h3>
+          <p class="text-red-800 text-sm">
+            Większość ofiar śmiertelnych przy awariach na autostradach to osoby stojące przy
+            unieruchomionym pojeździe. Nigdy nie stawaj za samochodem ani przy drzwiach od strony jezdni.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Krok po kroku — co zrobić gdy auto się psuje na autostradzie</h2>
+        <ol class="space-y-4 mb-8 list-none">
+          {[
+            { t: 'Włącz awaryjne światła migające NATYCHMIAST', d: 'Zanim jeszcze zdecydujesz co dalej — zapal "awarie". Informuje innych kierowców, że coś się dzieje.' },
+            { t: 'Zjedź na pas awaryjny lub pobocze', d: 'Jak najszybciej, ale bezpiecznie — nie hamuj gwałtownie. Zjedź jak najdalej od pasa ruchu, najlepiej za barierę ochronną.' },
+            { t: 'Wysiądź od strony barierki — NIE od strony jezdni', d: 'Drzwi od strony ruchu otwieraj tylko jeśli nie masz innego wyjścia. Wszyscy pasażerowie wychodzą od strony barierki.' },
+            { t: 'Odejdź od samochodu poza barierę ochronną', d: 'Nie stój przy aucie — odejdź poza barierę lub jak najdalej od jezdni. To najważniejsza zasada bezpieczeństwa na autostradzie.' },
+            { t: 'Ustaw trójkąt ostrzegawczy — minimum 100 m za pojazdem', d: 'Tylko jeśli możesz to zrobić bezpiecznie. Na autostradzie trójkąt stawia się znacznie dalej niż na zwykłej drodze.' },
+            { t: 'Zadzwoń po pomoc', d: 'Numer alarmowy 112 lub do pomocy drogowej. Podaj lokalizację (tabliczki na słupkach przy autostradzie oznaczają dokładny kilometraż).' },
+            { t: 'Czekaj bezpiecznie poza barierą', d: 'Nie wracaj do auta bez potrzeby. Poczekaj na pomoc w miejscu, gdzie nikt Cię nie potrąci.' },
+          ].map((step, i) => (
+            <li class="flex items-start gap-4">
+              <span class="w-8 h-8 rounded-full bg-pd-orange flex items-center justify-center flex-shrink-0 mt-0.5 text-white font-bold text-sm">{i + 1}</span>
+              <div>
+                <strong class="text-gray-900 block mb-1">{step.t}</strong>
+                <span class="text-gray-500 text-sm">{step.d}</span>
+              </div>
+            </li>
+          ))}
+        </ol>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Jak ustalić swoją lokalizację na autostradzie?</h2>
+        <p class="mb-5">
+          Przy każdej autostradzie co 100 metrów stoją słupki z tabliczkami kilometrażowymi — małe,
+          niebieskie lub białe znaki z numerami. Zanotuj lub zapamiętaj numer z najbliższego słupka
+          i numer autostrady (np. A1, A2). To wystarczy, żeby dyspozytor precyzyjnie zlokalizował Cię
+          i wysłał lawetę we właściwe miejsce.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Kto pomoże na autostradzie?</h2>
+        <p class="mb-5">
+          Na autostradach płatnych (zarządzanych przez GDDKiA lub prywatnych operatorów) działają
+          służby patrolowe. Możesz też zadzwonić na numer alarmowy autostrady lub pod ogólny numer 112.
+          Jednak w wielu przypadkach najszybszą opcją jest lokalna pomoc drogowa — szczególnie gdy
+          jedziesz w pobliżu miejscowości.
+        </p>
+        <p class="mb-5">
+          Pamiętaj, że holowanie na autostradzie wymaga specjalnych uprawnień i odpowiedniego
+          sprzętu — lawety platformowej. Nie każda firma jest w stanie obsłużyć takie zlecenie.
+        </p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-10">Czy assistance ubezpieczeniowe działa na autostradzie?</h2>
+        <p class="mb-5">
+          Tak, ale sprawdź zakres swojej polisy. Niektóre pakiety assistance nie obejmują holowania
+          na dłuższe odległości lub mają limit do 50–100 km. Na autostradzie Twoje auto może być
+          dużo dalej od siedziby warsztatu niż zwykle. Warto znać numer alternatywnej pomocy drogowej.
+        </p>
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-8 mt-10">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">AutoMania — wyjeżdżamy na każde wezwanie</h3>
+          <p class="text-gray-600 mb-5">
+            Obsługujemy kierowców w regionie i na okolicznych drogach szybkiego ruchu.
+            Dysponujemy lawetą i ekipą gotową do wyjazdu całą dobę. Zadzwoń — nie czekaj.
+          </p>
+          <a href="tel:+48609116309" class="btn-primary">Zadzwoń: 609 116 309</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-gray-50">
+    <div class="wrap max-w-3xl">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Przeczytaj też</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <a href="/blog/laweta-kiedy-i-jak-dziala" class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Laweta — kiedy jej potrzebujesz i jak działa?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+        <a href="/blog/co-robic-gdy-samochod-sie-psuje-na-drodze" class="card p-6 group block">
+          <h3 class="font-bold text-gray-900 group-hover:text-pd-orange transition-colors mb-2">Co zrobić gdy samochód psuje się na drodze?</h3>
+          <span class="text-pd-orange text-sm font-semibold">Czytaj →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

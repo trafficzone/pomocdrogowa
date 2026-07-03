@@ -13,7 +13,8 @@ const {
   description = 'Pomoc drogowa 24/7 — laweta, naprawy na drodze i we własnym warsztacie. Szybki dojazd, uczciwe ceny.',
 } = Astro.props;
 
-const siteUrl = 'https://www.pomoc-drogowa.pl';
+const base = import.meta.env.BASE_URL;
+const siteUrl = 'https://trafficzone.github.io';
 const canonical = `${siteUrl}${Astro.url.pathname}`;
 ---
 
@@ -24,7 +25,7 @@ const canonical = `${siteUrl}${Astro.url.pathname}`;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href={`${base}favicon.ico`} />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Open Graph -->
@@ -57,7 +58,7 @@ const canonical = `${siteUrl}${Astro.url.pathname}`;
         </svg>
         Zadzwoń
       </a>
-      <a href="/kontakt"
+      <a href={`${base}kontakt`}
         class="flex-1 flex items-center justify-center gap-2 py-4 bg-gray-900 text-white font-semibold text-sm">
         Napisz do nas
       </a>
